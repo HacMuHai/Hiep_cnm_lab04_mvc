@@ -51,6 +51,10 @@ app.get('/', (req, resp) => {
     return resp.render('index', { courses })
 })
 
+app.post('post', () => {
+    console.log('post')
+})
+
 app.listen(PORT, () => {
     console.log(`Sever is running on port  ${PORT}`)
 })
